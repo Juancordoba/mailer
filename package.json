@@ -1,0 +1,27 @@
+{
+  "name": "mailer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juancordoba/mailer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Juancordoba/mailer/issues"
+  },
+  "homepage": "https://github.com/Juancordoba/mailer#readme",
+  "dependencies": {
+    "nodemailer": "^6.7.8"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.5",
+    "nodemon": "^2.0.19"
+  }
+}
