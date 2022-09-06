@@ -7,7 +7,7 @@ async function main() {
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: {
-            user: "eventos2@grupogamma.com", 
+            user: "eventos@grupogamma.com", 
             pass: "vnntsgg"
         },
     });
