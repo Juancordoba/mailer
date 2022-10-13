@@ -1,0 +1,12 @@
+{
+    "service": "gmail",
+      "auth": {
+        "type": "OAuth2",
+        "user": "juancordoba75@gmail.com",
+        "clientId": "1069175246374-tre06dojpfs90k0f8usa69sg5usj7eur.apps.googleusercontent.com",
+        "clientSecret": "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",
+        "refreshToken": "1//04-ZxKVplFjftCgYIARAAGAQSNwF-L9IrRtbxjRInGMV0N8vbzLIdKpiscUz6mrx81taeUIwsgfejBTPMw5ygLP6gKpjW9x8iRBI"
+      }
+  }
+
+  

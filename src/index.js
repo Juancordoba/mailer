@@ -1,16 +1,24 @@
-import nodemailer from "nodemailer";
+const nodemailer = require("nodemailer");
+const accountTransport = require("../account_transport.json");
 
 async function main() {
+
+  console.log(accountTransport.service)
+
     let transporter = nodemailer.createTransport({
-        debug: true,
-        host: "mail.grupogamma.com",
-        port: 587,
+       // debug: true,
+        host: "relevo.grupogamma.lan",
+        port: 25,
         secure: false, // true for 465, false for other ports
         auth: {
             user: "eventos@grupogamma.com", 
             pass: "vnntsgg"
         },
+        tls: {
+            rejectUnauthorized: false
+        }
     });
+
 
     transporter.verify(function (error, success) {
         if (error) {
@@ -24,15 +32,15 @@ async function main() {
   // send mail with defined transport object
   let info = await transporter.sendMail({
     from: '"Grupo Gamma" sistemas@awtsagroup.com>', // sender address
-    to: "juancordoba75@hotmail.com, juancordoba75@gmail.com, sistemas@awtsagroup.com", // list of receivers
-    subject: "Hello ✔", // Subject line
+    to: "juancordoba75@hotmail.com", // list of receivers
+    subject: "Prueba", // Subject line
     text: "Hello world?", // plain text body
     html: "<b>Hello world?</b>", // html body
   });
 
-  console.log("Message sent: %s", info.messageId);
 
-  console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+  console.log(info);
+
 
 }
 
