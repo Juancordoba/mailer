@@ -31,11 +31,11 @@ async function main() {
 
   // send mail with defined transport object
   let info = await transporter.sendMail({
-    from: '"Grupo Gamma" sistemas@awtsagroup.com>', // sender address
+    from: '"Grupo Gamma" eventos@grupogamma.com>', // sender address
     to: "juancordoba75@hotmail.com", // list of receivers
-    subject: "Prueba", // Subject line
-    text: "Hello world?", // plain text body
-    html: "<b>Hello world?</b>", // html body
+    subject: "Prueba configuracion gamma", // Subject line
+    text: "Ok", // plain text body
+    html: "<b>Mail ok</b>", // html body
   });
 
 
